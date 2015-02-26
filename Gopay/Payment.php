@@ -38,7 +38,7 @@ class Payment extends Nette\Object
 	/** @var string */
 	private $currency = Service::CURRENCY_CZK;
 
-	/** @var int */
+	/** @var string */
 	private $variable;
 
 	/** @var int */
@@ -139,7 +139,7 @@ class Payment extends Nette\Object
 	/**
 	 * Returns variable symbol
 	 *
-	 * @return int
+	 * @return string
 	 */
 	public function getVariable()
 	{
@@ -151,12 +151,12 @@ class Payment extends Nette\Object
 	/**
 	 * Sets variable symbol
 	 *
-	 * @param  int
+	 * @param  string
 	 * @return static provides a fluent interface
 	 */
 	public function setVariable($variable)
 	{
-		$this->variable = (int) $variable;
+		$this->variable = $variable;
 		return $this;
 	}
 

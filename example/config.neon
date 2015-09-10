@@ -1,18 +1,7 @@
 gopay:
 	gopayId: ***
 	gopaySecretKey: ******
-	testMode: true
+	testMode: yes
 	channels:
-		gopay: yes
-		card_ceskas: yes
-		card_unicreditb: yes
-		supercash: yes
-		premiumsms: yes
-		mplatba: yes
-		komercnib: yes
-		raiffeisenb: yes
-		mbank: yes
-		fiob: yes
-		unicreditb: yes
-		slovenskas: yes
-		transfer: yes
+		gopay: 'Gopay - Elektronická peněženka'
+		card_gpkb: 'Platba kartou - Komerční banka, a.s. - Global Payments'

@@ -1,8 +1,8 @@
 {
-    "name": "Markette/Gopay",
+    "name": "markette/gopay",
     "description": "Integrace platebního systému Gopay pro Nette Framework.",
     "keywords": ["nette", "eshop", "payment", "gopay"],
-    "homepage": "http://github.com/Markette/Gopay",
+    "homepage": "https://github.com/Markette/Gopay",
     "license": "New BSD",
     "authors": [
         {
@@ -12,17 +12,29 @@
         {
             "name": "Jan Škrášek",
             "email": "hrach.cz@gmail.com"
+        },
+        {
+            "name": "Milan Felix Šulc",
+            "email": "sulcmil@gmail.com"
+        },
+        {
+            "name": "Jaroslav Hranička",
+            "email": "hranicka@outlook.com"
         }
     ],
     "require": {
         "php": ">=5.3.2",
-        "ext-soap": "*",
-        "ext-mcrypt": "*",
+        "markette/gopay-api": "~2.5.0",
         "nette/utils": "~2.2",
         "nette/forms": "~2.2",
         "nette/application": "~2.2"
     },
+	"require-dev": {
+		"nette/tester": "~1.4",
+		"mockery/mockery": "~0.9.0",
+		"nette/di": "~2.2"
+	},
     "autoload": {
-        "classmap": ["/"]
+        "classmap": ["src/"]
     }
 }
